@@ -1,0 +1,17 @@
+{
+  "title": "Sim Theme Park",
+  "repo": "sp00nznet/simthemepark-recomp",
+  "accent": "#e0408a",
+  "note": {
+    "windows": "Point it at your installed Sim Theme Park (US Gold Edition 2.0; the folder holding tp.exe and data). The build takes about 10 minutes and 3 GB. Python and the Visual Studio Build Tools are installed if they are missing; the Build Tools are about 3 GB and add 15 to 30 minutes, and Windows asks for permission once."
+  },
+  "game": {
+    "name": "Sim Theme Park (Gold Edition 2.0)",
+    "files": ["tp.exe", "data/sound.sam"]
+  },
+  "sources": [{ "repo": "sp00nznet/pcrecomp", "ref": "pcrecomp-ingame", "dir": "pcrecomp" }],
+  "setup": {
+    "windows": ["cmd", "/c", "Setup.cmd", "-Yes", "-GameDir", "{game}"]
+  },
+  "play": "Sim Theme Park.*"
+}

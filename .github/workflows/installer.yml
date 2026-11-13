@@ -1,0 +1,17 @@
+# The installer for this commit, for Windows (recomp-launcher with
+# launcher/launcher.json). The repo is private, so it runs only by hand
+# (REPO_RULES section 8): gh workflow run installer.yml
+name: installer
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  installer:
+    uses: sp00nznet/recomp-launcher/.github/workflows/installer.yml@main
+    with:
+      name: SimThemePark-Recomp-Installer
+      platforms: windows
