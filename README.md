@@ -8,7 +8,7 @@ Windows directly. The 1994 [Theme Park recomp](https://github.com/sp00nznet/them
 is a DOS game on another engine; nothing of its code carries over.
 
 Built on the [pcrecomp](https://github.com/sp00nznet/pcrecomp) toolchain, on
-its **`pcrecomp-ingame`** branch (not merged into `main` yet), and following
+its `main` branch, and following
 its house style: layout, command line, headless mode.
 
 ![Lost Kingdom, open: the park running in the recompiled game](docs/screenshots/park-lost-kingdom.png)
@@ -31,7 +31,7 @@ game uses Windows' own DirectDraw.
 3. Play with **`Sim Theme Park`** in that folder.
 
 The script checks for Python 3.10+, `pefile` and `capstone`, the pcrecomp
-toolkit (cloned beside this folder on its `pcrecomp-ingame` branch if it is
+toolkit (cloned beside this folder from `main` if it is
 missing) and the Visual Studio 2022 C++ compiler, and asks before installing
 any of them. It asks where the game is (`Setup.cmd -GameDir "C:\Program Files
 (x86)\SimTheme Park"` skips the question, `-Yes` answers yes), then catalogs,

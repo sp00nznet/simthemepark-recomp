@@ -33,7 +33,7 @@ push them later.
 
 The game reads its mouse and keyboard only through buffered DirectInput
 (`GetDeviceData`), so the clicks and keys go through pcrecomp's synthetic
-DirectInput (branch `pcrecomp-ingame`); a toolkit without it starts the game
+DirectInput; a toolkit without it starts the game
 but nothing answers.
 
 `--watchdog` ends the run and says where the game was, so a hang shows up as

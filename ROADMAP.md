@@ -10,7 +10,6 @@
 - **A conformance harness** (REPO_RULES section 9): dry-run bind count, first
   presented frame, the profile screen, each checked from `--shot`.
 - **A farm build**: `netlab build simthemepark-recomp` (recipe added, not run).
-- **pcrecomp-ingame into pcrecomp main**, then Setup, the launcher and netlab on `main`.
 
 ## Later
 - **Linux and macOS**: a Wine route (clang-cl or mingw cross-build, as in

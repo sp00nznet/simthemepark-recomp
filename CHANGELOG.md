@@ -7,6 +7,7 @@ All notable changes to this project are documented here. The format follows
 ## [Unreleased]
 
 ### Changed
+- Builds against pcrecomp main; the `pcrecomp-ingame` branch is merged.
 - Brought in line with the other recomps: the README in their order (Getting
   Started, Status, Screenshots, Documentation, Contributors, License), the
   build steps and command line moved to `docs/building.md`, `NOTICE` renamed

@@ -2,7 +2,7 @@
 
 What Sim Theme Park needed, in the order it turned up. Each item says where
 the fix lives: in this repository's host (`src/runtime/host.c`), or in
-pcrecomp (branch `pcrecomp-stp`, now inside `pcrecomp-ingame`), when another game would hit it too.
+pcrecomp (now on `main`), when another game would hit it too.
 
 ## The copy of the game
 
@@ -135,7 +135,7 @@ there (relative: first to the top-left corner, then by X,Y) and clicks.
 
 The front end reads both devices buffered (`GetDeviceData`), not with
 `GetDeviceState` (four calls in a run), and the synthetic devices answered
-no buffered events. pcrecomp (`pcrecomp-ingame`) now queues every synthetic
+no buffered events. pcrecomp now queues every synthetic
 move, button and key as a `DIDEVICEOBJECTDATA` event per device, and the
 front end, the name box and the park answer. The mouse is 1:1 in screen
 pixels.

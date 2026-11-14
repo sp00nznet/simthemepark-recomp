@@ -1,10 +1,8 @@
 # Building and the command line
 
 `Setup.cmd` (`tools/setup.ps1`) runs exactly the steps below, skipping the ones
-already done, and logs everything to `setup.log`. It clones pcrecomp on the
-**`pcrecomp-ingame`** branch if it is not beside this folder; that branch
-carries the toolkit work this game needs (`pcrecomp-stp`, plus buffered
-synthetic DirectInput) and is not merged into `main` yet.
+already done, and logs everything to `setup.log`. It clones pcrecomp
+(`main`) if it is not beside this folder.
 
 Linux and macOS: not yet. The host runs the lifted game inside a 32-bit
 Windows process against the real Windows DLLs (pcrecomp `native32`), and the
@@ -15,11 +13,11 @@ Wine route has not been tried; `setup.sh` says so and stops.
 Prerequisites: Windows 10/11, **Python 3.10+** (`py -3 --version`), **git**,
 **Visual Studio 2022** (or its Build Tools) with *Desktop development with
 C++*, ffmpeg on `PATH` for `--record` only, and pcrecomp cloned **beside**
-this repository on the `pcrecomp-ingame` branch:
+this repository (`main`):
 
 ```
 some-folder\
-  pcrecomp\              <- git clone -b pcrecomp-ingame https://github.com/sp00nznet/pcrecomp
+  pcrecomp\              <- git clone https://github.com/sp00nznet/pcrecomp
   simthemepark-recomp\   <- this repository
 ```
 
@@ -35,8 +33,8 @@ some-folder\
 6. `build\simthemepark.exe --run`.
 
 The usual trip-ups: `python` opening the Microsoft Store (use `py -3`); a new
-Python not on `PATH` until a new window; a pcrecomp on `main` instead of
-`pcrecomp-ingame`. The first `--run` writes `dialog.tcf` (windowed) into the game
+Python not on `PATH` until a new window; a pcrecomp older than
+the current `main`. The first `--run` writes `dialog.tcf` (windowed) into the game
 folder and `work\registry.reg`.
 
 ## The command line
