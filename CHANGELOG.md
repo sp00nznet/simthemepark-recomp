@@ -6,6 +6,8 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-11-20
+
 ### Changed
 - Builds against pcrecomp main; the `pcrecomp-ingame` branch is merged.
 - Brought in line with the other recomps: the README in their order (Getting
